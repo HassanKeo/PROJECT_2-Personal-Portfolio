@@ -1,100 +1,114 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Bienvenue sur notre site personnel. Découvrez mes projets, articles et contactez-moi.">
-    <meta name="keywords" content="portfolio, projets, articles">
-    <meta name="author" content="Hassan Ouattara">
-    <title>Accueil - Mon Portfolio</title>
+    <meta name="description" content="Portfolio frontend developer.">
+    <title>Frontend Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Mon Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="#accueil">Accueil</a></li>
-                <li><a href="#projets">Projets</a></li>
-                <li><a href="#articles">Articles</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="site-container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header__left">
+                <div class="header__logo">HK</div>
+                <span class="header__title">Han Keo</span>
+            </div>
+            <nav class="header__nav">
+                <a class="header__nav-link" href="#hero">Home</a>
+                <a class="header__nav-link" href="#projects">Projects</a>
+                <a class="header__nav-link" href="#work">Work</a>
+                <a class="header__nav-link" href="#education">Education</a>
+                <a class="header__nav-link" href="#reviews">Reviews</a>
+                <a class="header__nav-link" href="mailto:hankeo06@gmail.com">Contact</a>
+            </nav>
+        </header>
 
-    <main>
-        <section id="accueil">
-            <h2>Bienvenue</h2>
-            <p>Ceci est la page d'accueil de mon portfolio. Explorez mes projets et articles pour en savoir plus sur mon travail.</p>
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <h1 class="hero__title">Frontend Developer</h1>
+            <p class="hero__subtitle">HTML & CSS portfolio project</p>
         </section>
 
-        <section id="a-propos">
-            <h2>À propos</h2>
-            <p>Je suis un développeur passionné par la création de sites web modernes et performants.</p>
+        <!-- Main Grid Section -->
+        <section class="main-grid">
+            <!-- Projects Column -->
+            <div class="projects" id="projects">
+                <div class="projects__title">Projects</div>
+                <div class="project-card">
+                    <div class="project-card__name">Shi Fu Mi (Pierre-Feuille-Ciseaux)</div>
+                      <div class="project-card__desc">An interactive rock-paper-scissors game developed in JavaScript. The user plays against the computer in a simple and fun interface, with real-time scoring and animations for each choice.</div>
+                </div>
+                <div class="project-card">
+                    <div class="project-card__name">Calculatrice Web</div>
+                      <div class="project-card__desc">A modern online calculator allowing basic operations (addition, subtraction, multiplication, division) with dynamic display and user error handling.</div>
+                </div>
+                <div class="project-card">
+                    <div class="project-card__name">Site Vitrine : Voyage dans le désert marocain</div>
+                      <div class="project-card__desc">An immersive showcase website for a travel agency specializing in Moroccan desert tours. The site features photos, itineraries, testimonials, and a booking form.</div>
+                </div>
+                <div class="project-card">
+                    <div class="project-card__name">Portfolio Photographe</div>
+                      <div class="project-card__desc">An elegant portfolio site for a professional photographer, showcasing their best work through an interactive gallery, biography, and personalized contact form.</div>
+                </div>
+            </div>
+
+            <!-- Work Experience Column -->
+            <div class="work" id="work">
+                <div class="work__title">Work Experience</div>
+                <div class="work-block">
+                    <div class="work-block__name">roadmap.sh experience</div>
+                      <div class="work-block__desc">Participation in the frontend roadmap, building guided projects and learning best practices of modern web development.</div>
+                    <a class="work-block__link" href="https://roadmap.sh/frontend" target="_blank">Voir roadmap.sh</a>
+                </div>
+                <div class="work-block">
+                    <div class="work-block__name">Open Source Work</div>
+                      <div class="work-block__desc">Contributions to open source projects on GitHub, bug fixing, documentation improvement, and new feature development.</div>
+                    <a class="work-block__link" href="https://github.com/" target="_blank">Voir GitHub</a>
+                </div>
+            </div>
+
+            <!-- Education Column -->
+            <div class="education" id="education">
+                <div class="education__title">Education</div>
+                <div class="education__desc">Continuous training in web development, participation in bootcamps and completion of online courses.</div>
+                <ul class="education__list">
+                      <li>HTML & CSS - OpenClassrooms</li>
+                      <li>Modern JavaScript - Udemy</li>
+                      <li>React for Beginners - Grafikart</li>
+                      <li>Responsive Design - freeCodeCamp</li>
+                </ul>
+            </div>
         </section>
 
-        <section id="projets">
-            <h2>Mes Projets</h2>
-            <article>
-                <h3><a href="#">Shi Fu Mi (Pierre-Feuille-Ciseaux)</a></h3>
-                <p>Un jeu interactif de pierre-feuille-ciseaux développé en JavaScript. L'utilisateur affronte l'ordinateur dans une interface simple et ludique, avec un score en temps réel et des animations pour chaque choix.</p>
-            </article>
-            <article>
-                <h3><a href="#">Calculatrice Web</a></h3>
-                <p>Une calculatrice en ligne moderne permettant d'effectuer les opérations de base (addition, soustraction, multiplication, division) avec un affichage dynamique et une gestion des erreurs utilisateur.</p>
-            </article>
-            <article>
-                <h3><a href="#">Site Vitrine : Voyage dans le désert marocain</a></h3>
-                <p>Un site vitrine immersif pour une agence de voyages spécialisée dans les excursions dans le désert marocain. Le site présente des photos, des itinéraires, des témoignages et un formulaire de réservation.</p>
-            </article>
-            <article>
-                <h3><a href="#">Portfolio Photographe</a></h3>
-                <p>Un site portfolio élégant pour un photographe professionnel, mettant en valeur ses plus belles réalisations à travers une galerie interactive, une biographie et un formulaire de contact personnalisé.</p>
-            </article>
+        <!-- Reviews Section -->
+        <section class="reviews-section" id="reviews">
+            <div class="reviews-section__title">Reviews from my Teachers</div>
+            <div class="reviews-cards">
+                <div class="review-card">
+                      <div class="review-card__text">Excellent work on HTML structuring and code clarity. Keep it up!</div>
+                      <div class="review-card__author">Ms. Dupont</div>
+                      <div class="review-card__role">HTML/CSS Instructor</div>
+                </div>
+                <div class="review-card">
+                      <div class="review-card__text">Good progress on JavaScript projects, rigor and curiosity noticed.</div>
+                      <div class="review-card__author">Mr. Martin</div>
+                      <div class="review-card__role">JavaScript Teacher</div>
+                </div>
+                <div class="review-card">
+                      <div class="review-card__text">Active participation and team spirit during open source workshops.</div>
+                      <div class="review-card__author">Ms. Leroy</div>
+                      <div class="review-card__role">Open Source Mentor</div>
+                </div>
+            </div>
         </section>
 
-        <section id="articles">
-            <h2>Mes Articles</h2>
-            <article>
-                <h3>Les bases du HTML</h3>
-                <p>Découvrez les fondamentaux du langage HTML et comment bien structurer vos pages web.</p>
-            </article>
-            <article>
-                <h3>CSS : Guide complet</h3>
-                <p>Un guide détaillé et pratique pour maîtriser les feuilles de style CSS.</p>
-            </article>
-            <article>
-                <h3>Introduction à JavaScript</h3>
-                <p>Les premiers pas dans le monde de la programmation client avec JavaScript.</p>
-            </article>
-        </section>
-
-        <section id="contact">
-            <h2>Me Contacter</h2>
-            <form>
-                <section>
-                    <label for="name">Nom :</label>
-                    <input type="text" id="name" name="name" required>
-                </section>
-                <section>
-                    <label for="email">Email :</label>
-                    <input type="email" id="email" name="email" required>
-                </section>
-                <section>
-                    <label for="subject">Sujet :</label>
-                    <input type="text" id="subject" name="subject" required>
-                </section>
-                <section>
-                    <label for="message">Message :</label>
-                    <textarea id="message" name="message" rows="6" required></textarea>
-                </section>
-                <button type="submit">Envoyer</button>
-                <button type="reset">Réinitialiser</button>
-            </form>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2026 Mon Portfolio. Tous droits réservés.</p>
-    </footer>
+        <!-- Footer -->
+        <footer class="footer">
+            <p>© all rights reserved 2025</p>
+        </footer>
+    </div>
 </body>
 </html>
